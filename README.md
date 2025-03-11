@@ -12,7 +12,35 @@ The Drop Activation notebooks contain a combination of Dropout and BatchNormaliz
 The models are also trained without any modifications in order to provide a baseline for comparison of results.
 
 # Order of Notebooks
-There are 20 Jupyter notebooks in total.
+Two datasets, each with two model architectures and each architecture with 5 variations - baseline (no modifications),  Dropout, BatchNormalization, L1L2Regularization and DropActivation (Dropout + BatchNormalization + Drop Activation), leading to 20 Jupyter notebooks in total.
+```
+SVHN
+├── LeNet
+│   ├── 1. LeNet
+│   ├── 2. Dropout
+│   ├── 3. BatchNormalization
+│   ├── 4. L1L2Regularization
+│   └── 5. DropActivation
+└── AlexNet
+    ├── 6. AlexNet
+    ├── 7. Dropout
+    ├── 8. BatchNormalization
+    ├── 9. L1L2Regularization
+    └── 10. DropActivation
+CIFAR10
+├── LeNet
+│   ├── 11. LeNet
+│   ├── 12. Dropout
+│   ├── 13. BatchNormalization
+│   ├── 14. L1L2Regularization
+│   └── 15. DropActivation
+└── AlexNet
+    ├── 16. AlexNet
+    ├── 17. Dropout
+    ├── 18. BatchNormalization
+    ├── 19. L1L2Regularization
+    └── 20. DropActivation
+```
 
 # How To Run The Colab Notebooks
 The Colab notebooks are entirely self-contained i.e., dataset download, dataset preprocessing, model creation and model training are entirely within the notebooks and do not require any additional library download or installation.
